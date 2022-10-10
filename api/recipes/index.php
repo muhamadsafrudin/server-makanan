@@ -2,7 +2,7 @@
 
 require "../../config/Request.php";
 
-$response = $request->get('/api/recipes/');
+// $response = $request->get('/api/recipes/');
 
 if(isset($_GET['page']) && $_GET['page'] != "" ){
     
@@ -18,7 +18,7 @@ if(isset($_GET['limit']) && $_GET['limit'] != "" ){
 
 if(isset($_GET['category']) && $_GET['category'] != "" ){
 
-    $response = $request->get('/api/categorys/recipes/' . $_GET['category']);
+    $response = $request->get('/api/category/recipes/' . $_GET['category']);
     
 }
 

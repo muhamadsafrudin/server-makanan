@@ -2,9 +2,8 @@
 
 require "../../config/Request.php";
 
-$response = $request->get('/api/categorys/recipes');
+$response = $request->get('/api/category/recipes');
   
-
 if($response->getStatusCode() == 200){
 
     echo $response->getBody()->getContents();

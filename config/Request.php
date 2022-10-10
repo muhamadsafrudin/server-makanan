@@ -9,3 +9,6 @@ $base_url = 'https://masak-apa.tomorisakura.vercel.app';
 require($_SERVER["DOCUMENT_ROOT"] . "/server-makanan/". "vendor/autoload.php");
 
 $request = new GuzzleHttp\Client(['base_uri' => $base_url]);
+
+//  dokumentasi server makanan
+//  https://github.com/tomorisakura/unofficial-masakapahariini-api
