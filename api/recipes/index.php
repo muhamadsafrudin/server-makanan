@@ -2,7 +2,7 @@
 
 require "../../config/Request.php";
 
-// $response = $request->get('/api/recipes/');
+$response = $request->get('/api/recipes/1');
 
 if(isset($_GET['page']) && $_GET['page'] != "" ){
     
